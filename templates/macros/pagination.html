@@ -1,6 +1,6 @@
 {% macro render_pagination(pagination) %}
   <nav>
-    <ul class="pager">
+    <ul class="pagination">
       <li class="previous">
       {% if pagination.has_prev %}
         <a href="{{ pagination.prev|url }}"><span aria-hidden="true">&larr;</span> Previous post</a>
@@ -8,7 +8,7 @@
         <span class="disabled"><span aria-hidden="true">&larr;</span> Previous post</span>
       {% endif %}
       </li>
-      | {{ pagination.page }} |
+      <li class="active">{{ pagination.page }}</li>
       <li class="next">
       {% if pagination.has_next %}
         <a href="{{ pagination.next|url }}">Next post<span aria-hidden="true">&rarr;</span></a>
