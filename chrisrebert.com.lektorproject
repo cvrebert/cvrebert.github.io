@@ -1,9 +1,9 @@
 [project]
 name = chrisrebert.com
-url = http://chrisrebert.com
+url = http://blog.chrisrebert.com
 
 [packages]
 lektor-disqus-comments = 0.2
 
 [servers.ghpages]
-target = ghpages+https://cvrebert/cvrebert.github.io?cname=chrisrebert.com
+target = ghpages+https://cvrebert/cvrebert.github.io?cname=blog.chrisrebert.com
