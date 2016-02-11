@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ '/static/bootstrap.min.css'|url }}" />
+  <link rel="stylesheet" href="{{ '/static/bootstrap-theme.min.css'|url }}" />
+  <title>{% block title %}Home{% endblock %} — chrisrebert.com</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">@cvrebert</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li{% if this._path == '/' %} class="active"{% endif
+              %}><a href="{{ '/'|url }}">Home</a></li>
+            {% for href, title in [
+              ['/blog', 'Blog'],
+              ['/about', 'About']
+            ] %}
+              <li{% if this.is_child_of(href) %} class="active"{% endif
+                %}><a href="{{ href|url }}">{{ title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    {% block body %}{% endblock %}
+    <hr />
+    <footer>
+      &copy; Copyright 2016 by Chris Rebert.
+    </footer>
+  </div>
+</body>

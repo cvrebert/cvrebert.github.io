@@ -1,0 +1,11 @@
+title: Your blogputer is restarting…
+---
+pub_date: 2016-02-11
+---
+author: Chris
+---
+body:
+
+I'm currently in the process of launching the new incarnation of my website & blog, this time using [GitHub Pages](https://pages.github.com/) and [Lektor](https://www.getlektor.com). The VM my old crappy WordPress blog was on was forced to change static IPs a while back, near when ARIN was getting close to running out of IPv4 addresses, and I didn't find time at that point to perform my half of the migration, so it's been offline ever since then (not that it had much content). So I'm starting fresh with this new blog.
+
+First up will be a series of posts based on my involvement with the [Bootstrap project](http://getbootstrap.com) (the web front-end framework originally known as "Twitter Bootstrap").
