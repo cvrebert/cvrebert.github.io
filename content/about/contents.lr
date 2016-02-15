@@ -2,7 +2,11 @@ title: About
 ---
 body:
 
-Hi, I'm Chris Rebert. I'm a software engineer in the San Francisco Bay Area, the same place I grew up. I am fascinated by [programming language theory](https://en.wikipedia.org/wiki/Programming_language_theory) and have a B.S. in Computer Science from [UCSD](https://en.wikipedia.org/wiki/University_of_California,_San_Diego). For a while, I was an active member of the [Bootstrap project's](https://github.com/twbs/bootstrap) [Core Team](http://getbootstrap.com/about/#team) of maintainers.
+Hi, I'm Chris Rebert. I'm a software engineer in the San Francisco Bay Area, the same place I grew up. I am fascinated by [programming language theory](https://en.wikipedia.org/wiki/Programming_language_theory) and have a B.S. in Computer Science from [UCSD](https://en.wikipedia.org/wiki/University_of_California,_San_Diego).
+
+I think the ["Open Web® Platform"](https://platform.html5.org) is horribly technically flawed as an app platform; as a medium for non-app documents, it's adequate. Unfortunately, it looks like web apps aren't going to die any time soon.
+
+I'm currently a member of the [Bootstrap project's](https://github.com/twbs/bootstrap) [Core Team](http://getbootstrap.com/about/#team) of maintainers, for the sake of making creating web UIs somewhat less horribly painful.
 
 * GitHub: [@cvrebert](https://github.com/cvrebert)
 * Twitter: [@cvrebert](https://twitter.com/cvrebert)

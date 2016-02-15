@@ -1,19 +1,31 @@
 {% macro render_pagination(pagination) %}
-  <nav>
+  <nav class="text-center">
     <ul class="pagination">
-      <li class="previous">
+      <li class="previous {% if not pagination.has_prev %}disabled{% endif %}">
       {% if pagination.has_prev %}
-        <a href="{{ pagination.prev|url }}"><span aria-hidden="true">&larr;</span> Previous post</a>
+        <a href="{{ pagination.prev|url }}">
       {% else %}
-        <span class="disabled"><span aria-hidden="true">&larr;</span> Previous post</span>
+        <span>
+      {% endif %}
+          <span aria-hidden="true">&larr;</span> Previous post
+      {% if pagination.has_prev %}
+        </a>
+      {% else %}
+        </span>
       {% endif %}
       </li>
-      <li class="active">{{ pagination.page }}</li>
-      <li class="next">
+      <li class="active"><span>{{ pagination.page }}</span></li>
+      <li class="next {% if not pagination.has_next %}disabled{% endif %}">
       {% if pagination.has_next %}
-        <a href="{{ pagination.next|url }}">Next post<span aria-hidden="true">&rarr;</span></a>
+        <a href="{{ pagination.next|url }}">
       {% else %}
-        <span class="disabled">Next post<span aria-hidden="true">&rarr;</span></span>
+        <span>
+      {% endif %}
+          Next post<span aria-hidden="true">&rarr;</span>
+      {% if pagination.has_next %}
+        </a>
+      {% else %}
+        </span>
       {% endif %}
       </li>
     </ul>
